@@ -1,3 +1,6 @@
+using CleanStore.Application;
+using CleanStore.Infrastructure;
+
 namespace CleanStore.API
 {
     public class Program
@@ -12,6 +15,9 @@ namespace CleanStore.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddInfrastructureServices(builder.Configuration);
+            builder.Services.AddApplicationServices();
 
             var app = builder.Build();
 

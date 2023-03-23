@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanStore.Infrastructure.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
-    [Migration("20230228051109_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20230321190057_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

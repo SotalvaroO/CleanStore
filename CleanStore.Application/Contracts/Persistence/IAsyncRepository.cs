@@ -28,6 +28,6 @@ namespace CleanStore.Application.Contracts.Persistence
 
         Task<T> UpdateAsync(ID id, T entity);
 
-        Task<T> DeleteAsync(T entity);
+        Task DeleteAsync(T entity);
     }
 }
